@@ -1,0 +1,26 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target ‘YiDao’ do
+
+pod 'Kingfisher’, '~> 3.11.0'
+pod 'SnapKit', '~> 3.2.0'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'SVProgressHUD'
+pod 'IQKeyboardManagerSwift'
+pod 'Alamofire'
+pod 'Moya'
+pod 'SwiftyJSON'
+pod 'HandyJSON', '~> 1.8.0'
+pod 'IQKeyboardManagerSwift'
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.2'
+        end
+    end
+end
