@@ -31,6 +31,9 @@
 		965236BF1F8F943A001EC0C7 /* LLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965236B51F8F9439001EC0C7 /* LLHelper.swift */; };
 		965236C01F8F943A001EC0C7 /* LLProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965236B61F8F9439001EC0C7 /* LLProgressHUD.swift */; };
 		965236C11F8F943A001EC0C7 /* LLRegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965236B71F8F9439001EC0C7 /* LLRegexHelper.swift */; };
+		967E0B841FECAFBD00BDFFF6 /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E0B831FECAFBD00BDFFF6 /* HelperUtil.m */; };
+		967E0B871FECB40300BDFFF6 /* APPSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 967E0B861FECB40300BDFFF6 /* APPSetting.plist */; };
+		967E0B891FECB42A00BDFFF6 /* APPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967E0B881FECB42A00BDFFF6 /* APPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,10 @@
 		965236B51F8F9439001EC0C7 /* LLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLHelper.swift; sourceTree = "<group>"; };
 		965236B61F8F9439001EC0C7 /* LLProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLProgressHUD.swift; sourceTree = "<group>"; };
 		965236B71F8F9439001EC0C7 /* LLRegexHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRegexHelper.swift; sourceTree = "<group>"; };
+		967E0B821FECAFBD00BDFFF6 /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
+		967E0B831FECAFBD00BDFFF6 /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
+		967E0B861FECB40300BDFFF6 /* APPSetting.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = APPSetting.plist; sourceTree = "<group>"; };
+		967E0B881FECB42A00BDFFF6 /* APPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPManager.swift; sourceTree = "<group>"; };
 		9EFFF3C6886CBB144B8BF1DF /* Pods-YiDao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiDao.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiDao/Pods-YiDao.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +133,7 @@
 				963BCF8D1F8F8AFF001DDCAE /* Assets.xcassets */,
 				963BCF8F1F8F8AFF001DDCAE /* LaunchScreen.storyboard */,
 				963BCF921F8F8AFF001DDCAE /* Info.plist */,
+				967E0B851FECB40300BDFFF6 /* configuration */,
 			);
 			path = YiDao;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 		965236AA1F8F9439001EC0C7 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				967E0B811FECAFBD00BDFFF6 /* HelperUtil */,
 				962398DF1F961F8C003147D7 /* Config3rd.swift */,
 				9602D75E1F95AE1000BC5362 /* YDConfig.swift */,
 				965236AB1F8F9439001EC0C7 /* BaseClass */,
@@ -189,6 +198,24 @@
 				965236B71F8F9439001EC0C7 /* LLRegexHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		967E0B811FECAFBD00BDFFF6 /* HelperUtil */ = {
+			isa = PBXGroup;
+			children = (
+				967E0B821FECAFBD00BDFFF6 /* HelperUtil.h */,
+				967E0B831FECAFBD00BDFFF6 /* HelperUtil.m */,
+			);
+			path = HelperUtil;
+			sourceTree = "<group>";
+		};
+		967E0B851FECB40300BDFFF6 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				967E0B861FECB40300BDFFF6 /* APPSetting.plist */,
+				967E0B881FECB42A00BDFFF6 /* APPManager.swift */,
+			);
+			path = configuration;
 			sourceTree = "<group>";
 		};
 		B95D1562592179178BCB8484 /* Frameworks */ = {
@@ -272,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				963BCF9C1F8F8B71001DDCAE /* LoginViewController.xib in Resources */,
+				967E0B871FECB40300BDFFF6 /* APPSetting.plist in Resources */,
 				963BCF911F8F8AFF001DDCAE /* LaunchScreen.storyboard in Resources */,
 				963BCF8E1F8F8AFF001DDCAE /* Assets.xcassets in Resources */,
 				962398DA1F960F4C003147D7 /* HomeViewController.xib in Resources */,
@@ -342,6 +370,7 @@
 				965236BF1F8F943A001EC0C7 /* LLHelper.swift in Sources */,
 				9602D75B1F945AB500BC5362 /* RequestApi.swift in Sources */,
 				965236C11F8F943A001EC0C7 /* LLRegexHelper.swift in Sources */,
+				967E0B841FECAFBD00BDFFF6 /* HelperUtil.m in Sources */,
 				963BCF9B1F8F8B71001DDCAE /* LoginViewController.swift in Sources */,
 				962398E01F961F8C003147D7 /* Config3rd.swift in Sources */,
 				965236BD1F8F943A001EC0C7 /* Ext+UILable.swift in Sources */,
@@ -349,6 +378,7 @@
 				9602D75F1F95AE1000BC5362 /* YDConfig.swift in Sources */,
 				965236BB1F8F943A001EC0C7 /* Ext+UIButton.swift in Sources */,
 				963BCF871F8F8AFF001DDCAE /* AppDelegate.swift in Sources */,
+				967E0B891FECB42A00BDFFF6 /* APPManager.swift in Sources */,
 				965236B91F8F943A001EC0C7 /* Ext+String.swift in Sources */,
 				965236B81F8F943A001EC0C7 /* LLBaseViewController.swift in Sources */,
 				9602D7591F945AA000BC5362 /* ApiPath.swift in Sources */,

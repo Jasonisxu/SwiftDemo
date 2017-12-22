@@ -4,7 +4,7 @@
 #获取info.plist文件
 testApp_plist_path=./YiDao/Info.plist
 #获取YDConfig.swift文件
-testApp_YDConfig_path=./YiDao/Tool/YDConfig.swift
+testApp_APPSetting_path=./YiDao/configuration/APPSetting.plist
 
 #获取APP名称
 cityName=${pcode["10"]}
@@ -12,10 +12,10 @@ cityName=${pcode["10"]}
 #更改APP名称
 /usr/libexec/PlistBuddy -c "Set CFBundleDisplayName ${cityName}" ${testApp_plist_path}
 
-cat ${testApp_YDConfig_path} | while read line;
-do
-resultLine=$(grep id $line)
-echo "resultLine is =="${resultLine}
-done
+#获取颜色
+MainColorString=${pcode["MainColorString"]}
+#echo -e ${cityName}
+#更改颜色
+/usr/libexec/PlistBuddy -c "Set MainColorString ${MainColorString}" ${testApp_APPSetting_path}
 
 

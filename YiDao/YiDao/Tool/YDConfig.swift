@@ -30,7 +30,7 @@ let LLBigFontSize:    CGFloat = 18
 let LLNomalFontSize:  CGFloat = 14
 let LLSmallFontSize:  CGFloat = 10
 
-let Main_Color =       RGBCOLOR(r: 240,130,0)
+let Main_Color =       HelperUtil.color(withHexString: APPManager.MainColorString_Value) ?? .white
 // 自定义打印方法
 func printLog<T>(_ message : T, file : String = #file, funcName : String = #function, lineNum : Int = #line) {
     

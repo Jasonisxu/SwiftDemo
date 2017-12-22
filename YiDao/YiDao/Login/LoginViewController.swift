@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         addTextFieldLeftViewwAction()
         
+        self.view.backgroundColor = Main_Color
+        
         NotificationCenter.default.addObserver(self, selector: #selector(textFiledNotifitionAction), name: NSNotification.Name.UITextFieldTextDidChange, object: nil);
 
     }
