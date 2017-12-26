@@ -23,6 +23,14 @@ cityName=${pcode["22"]}
 ## 修改bundle identifier
 #sed -i '' s/${oldBundleId}/${newBundleId}/g ${testApp_project_path}
 
+#获取证书号
+oldTeamID="C6H97AN73G"
+NewTeamID="C6H97AN73G"
+#${pcode["TianJin"]}
+echo -e ${NewTeamID}
+#更改证书号
+sed -i '' s/${oldTeamID}/${NewTeamID}/g ${testApp_project_path}
+
 
 #获取颜色
 MainColorString=${pcode["MainColorString"]}
@@ -30,6 +38,14 @@ MainColorString=${pcode["MainColorString"]}
 #更改颜色
 /usr/libexec/PlistBuddy -c "Set MainColorString ${MainColorString}" ${testApp_APPSetting_path}
 
-
 #执行脚本
 base xcodebuild.sh
+
+
+## 遍历key值
+#for key in $(echo ${!pcode[*]})
+#do
+#echo "$key : ${pcode[${key}]}"
+#echo "1"
+#done
+

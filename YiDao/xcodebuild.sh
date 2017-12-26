@@ -18,7 +18,7 @@ Scheme_Name="YiDao";
 
 #配置环境，Release或者Debug
 
-Configuration="Debug"
+Configuration="Release"
 
 #打包成.xcarchive文件的存放路径
 
